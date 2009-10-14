@@ -1,0 +1,78 @@
+unit godeterm_main;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+type
+  TForm1 = class(TForm)
+    a11: TLabeledEdit;
+    a12: TLabeledEdit;
+    a13: TLabeledEdit;
+    a21: TLabeledEdit;
+    a22: TLabeledEdit;
+    a23: TLabeledEdit;
+    a31: TLabeledEdit;
+    a32: TLabeledEdit;
+    a33: TLabeledEdit;
+    b1: TLabeledEdit;
+    b2: TLabeledEdit;
+    b3: TLabeledEdit;
+    btt_her: TButton;
+    D: TLabeledEdit;
+    D1: TLabeledEdit;
+    D2: TLabeledEdit;
+    D3: TLabeledEdit;
+    X1: TLabeledEdit;
+    X2: TLabeledEdit;
+    X3: TLabeledEdit;
+    procedure btt_herClick(Sender: TObject);
+    procedure FormKeyPress(Sender: TObject; var Key: Char);
+  private
+    { Private-Deklarationen }
+  public
+    { Public-Deklarationen }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TForm1.btt_herClick(Sender: TObject);
+var
+a: array[1..3] of array[1..3] of Real;
+b: array[1..3] of Real;
+d: array[1..3] of Real;
+begin
+if
+  (a11.Text = '') or (a12.Text = '') or (a13.Text = '') or
+  (a21.Text = '') or (a22.Text = '') or (a23.Text = '') or
+  (a31.Text = '') or (a32.Text = '') or (a33.Text = '')
+then
+  Application.MessageBox('Wert vergessen einzutragen', 'Fehler', MB_OK or MB_Iconerror)
+end;
+
+procedure TForm1.FormKeyPress(Sender: TObject; var Key: Char);
+begin
+if Key = Chr(vk_Return) then
+   btt_her.Click
+   else
+   begin
+    if Key = '.' then
+      Key := ',';
+      if NOT (Key in [#8, '0'..'9', ',']) then
+        begin
+          Key := #0;
+          beep;
+        end;
+   end;
+end;
+
+end.
