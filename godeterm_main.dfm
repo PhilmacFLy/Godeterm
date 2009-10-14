@@ -3,18 +3,21 @@ object Form1: TForm1
   Top = 0
   Caption = 'Form1'
   ClientHeight = 390
-  ClientWidth = 436
+  ClientWidth = 431
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  KeyPreview = True
   OldCreateOrder = False
+  Position = poDesktopCenter
+  OnKeyPress = FormKeyPress
   PixelsPerInch = 96
   TextHeight = 13
   object a11: TLabeledEdit
-    Left = 16
+    Left = 56
     Top = 24
     Width = 65
     Height = 26
@@ -36,7 +39,7 @@ object Form1: TForm1
     TabOrder = 0
   end
   object a12: TLabeledEdit
-    Left = 104
+    Left = 144
     Top = 24
     Width = 65
     Height = 26
@@ -58,7 +61,7 @@ object Form1: TForm1
     TabOrder = 1
   end
   object a13: TLabeledEdit
-    Left = 192
+    Left = 232
     Top = 24
     Width = 65
     Height = 26
@@ -80,7 +83,7 @@ object Form1: TForm1
     TabOrder = 2
   end
   object a21: TLabeledEdit
-    Left = 16
+    Left = 56
     Top = 80
     Width = 65
     Height = 26
@@ -102,7 +105,7 @@ object Form1: TForm1
     TabOrder = 3
   end
   object a22: TLabeledEdit
-    Left = 104
+    Left = 144
     Top = 80
     Width = 65
     Height = 26
@@ -124,7 +127,7 @@ object Form1: TForm1
     TabOrder = 4
   end
   object a23: TLabeledEdit
-    Left = 192
+    Left = 232
     Top = 80
     Width = 65
     Height = 26
@@ -146,7 +149,7 @@ object Form1: TForm1
     TabOrder = 5
   end
   object a31: TLabeledEdit
-    Left = 16
+    Left = 56
     Top = 136
     Width = 65
     Height = 26
@@ -168,7 +171,7 @@ object Form1: TForm1
     TabOrder = 6
   end
   object a32: TLabeledEdit
-    Left = 104
+    Left = 144
     Top = 136
     Width = 65
     Height = 26
@@ -190,7 +193,7 @@ object Form1: TForm1
     TabOrder = 7
   end
   object a33: TLabeledEdit
-    Left = 192
+    Left = 232
     Top = 136
     Width = 65
     Height = 26
@@ -212,7 +215,7 @@ object Form1: TForm1
     TabOrder = 8
   end
   object b1: TLabeledEdit
-    Left = 312
+    Left = 352
     Top = 24
     Width = 65
     Height = 26
@@ -234,7 +237,7 @@ object Form1: TForm1
     TabOrder = 9
   end
   object b2: TLabeledEdit
-    Left = 312
+    Left = 352
     Top = 80
     Width = 65
     Height = 26
@@ -256,7 +259,7 @@ object Form1: TForm1
     TabOrder = 10
   end
   object b3: TLabeledEdit
-    Left = 312
+    Left = 352
     Top = 136
     Width = 65
     Height = 26
@@ -284,15 +287,16 @@ object Form1: TForm1
     Height = 25
     Caption = 'Give me that'
     TabOrder = 12
+    OnClick = btt_herClick
   end
-  object D: TLabeledEdit
+  object D0: TLabeledEdit
     Left = 168
     Top = 248
     Width = 105
     Height = 26
-    EditLabel.Width = 11
+    EditLabel.Width = 20
     EditLabel.Height = 19
-    EditLabel.Caption = 'D'
+    EditLabel.Caption = 'D0'
     EditLabel.Font.Charset = DEFAULT_CHARSET
     EditLabel.Font.Color = clWindowText
     EditLabel.Font.Height = -16
@@ -305,6 +309,7 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     TabOrder = 13
   end
   object D1: TLabeledEdit
@@ -327,6 +332,7 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     TabOrder = 14
   end
   object D2: TLabeledEdit
@@ -349,6 +355,7 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     TabOrder = 15
   end
   object D3: TLabeledEdit
@@ -371,6 +378,7 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     TabOrder = 16
   end
   object X1: TLabeledEdit
@@ -393,6 +401,7 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     TabOrder = 17
   end
   object X2: TLabeledEdit
@@ -415,6 +424,7 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     TabOrder = 18
   end
   object X3: TLabeledEdit
@@ -437,6 +447,7 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     TabOrder = 19
   end
 end
