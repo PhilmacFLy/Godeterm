@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2009.10.14 16:02:30.529.pas,C:\Dokumente und Einstellungen\PhilmacFLy\Eigene Dateien\RAD Studio\Projekte\Unit1.pas=C:\Dokumente und Einstellungen\PhilmacFLy\Eigene Dateien\RAD Studio\Projekte\Godeterm\godeterm_main.pas</Transaction>
+    <Transaction>2009.10.14 16:02:30.529.dfm,C:\Dokumente und Einstellungen\PhilmacFLy\Eigene Dateien\RAD Studio\Projekte\Unit1.dfm=C:\Dokumente und Einstellungen\PhilmacFLy\Eigene Dateien\RAD Studio\Projekte\Godeterm\godeterm_main.dfm</Transaction>
+    <Transaction>2009.10.14 16:02:39.125.dproj,C:\Dokumente und Einstellungen\PhilmacFLy\Eigene Dateien\RAD Studio\Projekte\Project1.dproj=C:\Dokumente und Einstellungen\PhilmacFLy\Eigene Dateien\RAD Studio\Projekte\Godeterm\godeterm.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
