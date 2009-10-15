@@ -1,4 +1,5 @@
-(*
+(*<<<<<<< HEAD
+
      Godeterm - Little Programm, that calculate the determinants of a equation with 3 Variabels
     Copyright (C) 2009  Philipp 'PhilmacFLy' Neumann
 
@@ -14,7 +15,9 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-*)
+
+=======
+>>>>>>> eac1225d5bc56e12e419af5695baef328eb03c02*)
 unit godeterm_main;
 
 interface
